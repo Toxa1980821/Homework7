@@ -11,7 +11,7 @@ public class Main {
         int clientOS = 1;
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientOS == 1) {
+        } else {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
         // Задача № 2
@@ -55,7 +55,12 @@ public class Main {
         // Задача № 5
         System.out.println(" Задача № 5 ");
 
-        int monthNumber = 12;
+        int monthNumber = 15;
+        if (monthNumber > 12 || monthNumber < 1) {
+            System.out.println("Программа не выполняется ");
+            return;
+        }
+
         switch (monthNumber) {
             case 12:
             case 1:
